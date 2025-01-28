@@ -12,6 +12,9 @@ public class Funcoes {
         saudacao();
         saudacao();
 
+        // 2- Parametros
+        soma(2 , 4);
+
         
     }
 
@@ -21,6 +24,16 @@ public class Funcoes {
     System.out.println("Olá, esta é minha primeira função!");
     
    } 
+
+
+   public static void soma(int a, int b) {
+    int resultado =  a + b;
+
+    System.out.println("O resultado dda soma é: " + resultado);
+
+
+    
+   }
 
 
     }
