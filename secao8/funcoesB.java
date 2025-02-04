@@ -43,6 +43,35 @@ public class funcoesB {
     escopoLocal(localVar);
 
     // { } => Abertura e fechamento de chaves, delimitam um escopo, cria um escopo.
+
+    /*11 - Funções matemáticas
+     * Math.sqrt(double a): Calcula raiz quadrada de um número
+     * Math.pow(double a, double b): Eleva um número "a" a potência "b"
+     * Math.abs(int a): Retorna o valor absoluto de um número;
+     * Math.max (int a,int b): Retorna o maior de dois números
+     * 
+    */
+    System.out.println(Math.sqrt(26));
+    System.out.println(Math.sqrt(9));
+
+    System.out.println(Math.pow(2,4));
+    System.out.println(Math.pow(2,3));
+
+    System.out.println(Math.abs(-10));
+    System.out.println(Math.abs(10));
+
+    System.out.println(Math.max(20,30));
+    System.out.println(Math.max(14,15));
+
+    double raizQuadrada = Math.sqrt(33);
+    System.out.println("A raiz quadrada de 33 é: " + raizQuadrada );
+
+
+
+
+
+
+
   
 
 
