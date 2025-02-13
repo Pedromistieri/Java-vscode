@@ -83,7 +83,69 @@ public class loops {
             System.out.println("Número aleatório: " + numero);
 
            }while (numero != 1) ;
+
+
+           // 5 - Break
+           // Break pode ser utilizado com qualuquer estrutura de loop
+
+           for(int x = 0; x <= 10;x++){
+
+            System.out.println("O valor de x é: " + x);
+
+            if(x == 5){
+                System.out.println("Parando o loop!");
+                break;
+            }
+
+           }
+
+           // 6 - continue]
+
+           for(int x = 10; x > 0 ; x--){
+
+            System.out.println("Teste!");
+
+          
+            if(x % 2 == 0){
+
+                System.out.println("Par!");
+                continue;
+
+            }
+
+            //Quando ele pula,isso aqui não executa
+            System.out.println("Contador: " + x);
+
+
+           }
             
+
+           // 7 - nested Loops
+
+           for(int m = 1 ; m <= 3; m++){
+
+            System.out.println("EXTERNO!");
+
+            for(int n = 1; n <= 3; n++){
+
+                System.out.println(m + " x " + n + " = " + (m * n));
+
+            }
+
+           }
+
+           // Padrão de estrelas
+           for(int o = 1; o <= 5; o++){
+
+            for(int p = 1; p <= o; p++ ){
+
+                System.out.print("*");
+
+            }
+
+            System.out.println();
+
+           }
            
 
            
