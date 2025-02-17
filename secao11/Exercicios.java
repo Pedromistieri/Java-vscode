@@ -32,6 +32,56 @@ public static void main(String[] args) {
     }
 
 
+    // Ex 3 - Verificçõ de número primo com for
+
+    int numPrimo = 21;
+
+    boolean ePrimo = true;
+
+    // Testr se ele é primo mesmo
+    for(int i = 2; i < numPrimo; i++){
+
+        //Se conseguir dividir esse cra e nõ ter resto, enão ele é primo
+        // dividido por 1 e por ele mesmo
+        if(numPrimo % i == 0){
+
+            ePrimo = false;
+            break;
+
+        }
+
+    }
+
+    if(ePrimo){
+
+        System.out.println("O número " + numPrimo + " é primo!");
+
+    }else{
+        System.out.println("O número " + numPrimo + " Não é primo!");
+
+
+    }
+
+    //Ex 4 - Menu interativo com do While
+   int opcao;
+   
+    do{
+
+        System.out.println("Exercício 4 - Menu");
+        System.out.println("0) Refrigerante");
+        System.out.println("1) Hamburguer");
+        System.out.println("2) Hot doggy");
+        System.out.println("3) Pizza");
+        System.out.println("4) Sair");
+        
+        opcao = (int)(Math.random() * 5);
+
+        System.out.println("A opção escolhida foi: " + opcao );
+
+    }while(opcao != 4);
+       
+
+
 
 
 }    
