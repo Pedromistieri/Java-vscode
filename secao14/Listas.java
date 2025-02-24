@@ -1,5 +1,7 @@
 package secao14;
 
+import java.util.Arrays;
+
 public class Listas {
 
     public static void main(String[] args) {
@@ -15,7 +17,7 @@ public class Listas {
         // 0 , 1 e 2 => add elementos
         // 3 => não tenho
 
-        frutas[0] = "Mamão";
+        frutas[0] = "Maçã";
         frutas[1] = "Limão";
         frutas[2] = "Laranja";
 
@@ -93,6 +95,93 @@ public class Listas {
             System.out.println("Encontraamos a letra: " + letra);
             break;
         }
+    }
+
+        // 4- loops com if 
+        // filtrar e somar números pares 
+        int somaPares = 0;
+        for(int numero : numeros){
+
+            if(numero % 2 == 0){
+                somaPares += numero;
+            }
+        }
+        System.out.println("Somaa pares: " + somaPares);
+
+        //Exibir valores maiores que determinado valor
+        int[] nums = {12, 6, 18 , 24, 48, 5};
+        int limite = 10;
+
+        for(int i = 0 ; i <nums.length; i++){
+
+            if(nums[i] > limite){
+
+                System.out.println("Numero maior encontrado: " + nums[i]);
+
+            }
+
+        }
+
+        String[] linguagens = {"Java", "c", "Python", "Php"} ;
+
+        String linguagensAlvo = "Python";
+
+        for(String linguagem : linguagens){
+
+            if(linguagensAlvo == linguagem){
+
+                System.out.println("Linguagem encontrada! Parando o loop ");
+                break;
+
+            } else{
+                System.out.println("Linguagem ainda não encontrada!");
+            }
+
+        }
+
+        // 5 -Atualizar valores
+        for(int i = 0; i < numeros.length;i++){
+
+            numeros[i] *= 2;
+
+        }
+
+        System.out.println(numeros[1]);
+
+        for(int numero : numeros){
+
+            System.out.println("Número dobrado: " + numero);
+        }
+
+        numeros[5] = 1;
+        System.out.println(numeros[5]);
+
+        for(int i = 0; i < frutas.length; i++){
+
+            if(frutas[i].equals("Maçã")) {
+
+                frutas[i] = "Abacate";
+
+            }
+
+        }
+        System.out.println(frutas[0]);
+
+        // 6 - Método toString
+
+        // classes do java que vão ter métodos utilitarios , o Arrays é uma delas
+
+        String dadosNumericos = Arrays.toString(numeros);
+
+        System.out.println(dadosNumericos);
+
+        String dadosFrutas = Arrays.toString(frutas);
+
+        System.out.println(dadosFrutas);
+
+        int[] teste = new int[3];
+        System.out.println(Arrays.toString(teste));
+
 
        }
        
@@ -101,4 +190,4 @@ public class Listas {
 
     }
     
-}
+
