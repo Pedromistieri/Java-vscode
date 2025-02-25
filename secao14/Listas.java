@@ -20,6 +20,7 @@ public class Listas {
         frutas[0] = "Maçã";
         frutas[1] = "Limão";
         frutas[2] = "Laranja";
+        
 
         System.out.println(frutas[1]);
 
@@ -182,12 +183,106 @@ public class Listas {
         int[] teste = new int[3];
         System.out.println(Arrays.toString(teste));
 
+        //7 - Adicionando novos itens ao Arrays
+        //ex1. criando um novo Array  maior e copiando o else.
+        int[] novoArray = new int [numeros.length + 1];
 
-       }
-       
+        for(int i = 0; i < numeros.length;i++){
+
+            novoArray[i] = numeros[i];
+            
+        }
+        System.out.println(Arrays.toString(novoArray));
+
+        novoArray[novoArray.length - 1] = 4;
+
+        System.out.println(Arrays.toString(novoArray));
+
+        //ex 2 - Utilizando o Array copy para copiar os elementos
+        String[] novoFrutas = new String[frutas.length + 1];
+
+        System.arraycopy(frutas, 0, novoFrutas, 0, frutas.length);
+
+        novoFrutas[novoFrutas.length - 1] = "jaca";
+
+        System.out.println(Arrays.toString(novoFrutas));
+
+        //ex 3 - Usando ArrayList
+        java.util.ArrayList<String>listaFrutas = new java.util.ArrayList<>(Arrays.asList("Maçã","limão","laranja"));
+
+        System.out.println(listaFrutas);
+
+        listaFrutas.add("manga");
+        System.out.println(listaFrutas);
+
+        //8- Reference trap
+        int[] arrayOriginal = {1,2,3};
+
+        int[] arrayCopia = arrayOriginal;
+
+        arrayCopia[0] = 10;
+
+        System.out.println(Arrays.toString(arrayOriginal));
+        System.out.println(Arrays.toString(arrayCopia));
+
+        // como evitar?
+        int[]arrayClone = arrayOriginal.clone();
+
+        arrayClone[0] = 999;
+
+        System.out.println(Arrays.toString(arrayOriginal));
+        System.out.println(Arrays.toString(arrayClone));
+
+
+
+        // 9 - Arrays 2d
+        //[[1,2]], [[2,3]]
+        //array [0][1]
+
+        int[][] matriz = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+
+        }; 
+
+        System.out.println(matriz[1][2]);
+
+        //Criando array d2 vazio e preenchendo
+        int[] [] tabela = new int [3][3];
+
+        tabela[0][0] = 10;
+        tabela[1][1] = 20;
+        tabela[2][2] = 30;
+
+        for(int[] linha : tabela){
+            System.out.println(Arrays.toString(linha));
+
+        }
+
+        int[][] grade = new int [4][5];
+
+        for(int m = 0; m < grade.length; m++){
+
+            for (int n = 0; n < grade[m].length; n++) { // Correção aqui
+                grade[m][n] = m * n;
+            }
+
+        }
+
+        for(int[] linha : grade){
+            System.out.println(Arrays.toString(linha));
+
+        }
+    
         
 
 
+       }
+       
     }
+
+
+    
     
 
