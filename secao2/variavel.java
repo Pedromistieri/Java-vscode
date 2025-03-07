@@ -149,7 +149,7 @@ System.out.println(valorInt);
 
 //casting de chaar para int
 
-char letra2 = 'A';
+//char letraA = 'A';
 //int codigoAscii = (int) letra2;
 
 //System.out.println(codigoAscii);
