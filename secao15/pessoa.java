@@ -7,6 +7,7 @@ public class pessoa {
 
     public void setNome(String nome){
         //this -> objeto
+        //this = Este objeto
         this.nome = nome;
 
 }

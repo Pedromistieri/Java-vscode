@@ -52,12 +52,44 @@ public class POO {
 
         System.out.println("O joão tem " + joao.getIdade() + " Anos");
 
-       
+        // 5 - Setters
+        contaBancaria ContaDaAna = new contaBancaria();
 
+        ContaDaAna.setTitular("Ana");
 
+        ContaDaAna.setSaldo(1000);
 
-       
+        ContaDaAna.exibirInfo();
 
-    }
+    System.out.println(ContaDaAna.getTitular());
+
+    System.out.println(ContaDaAna.getSaldo());     
+    
+    // 6 - Lógica em get e set
+    produto camisa =  new produto();
+
+    camisa.setNome("Camisa regata");
+
+    System.out.println(camisa.getNome());
+
+    camisa.setPreco(29.999999999);
+
+    System.out.println(camisa.getPreco());
+
+    // 7- Método dentro de método 
+        System.out.println(camisa.getProdutoInfo());
+
+        camisa.aplicarDesconto(0);
+
+        // 8 - Constructor 
+
+        Livro meuLivro = new Livro("Harry Potter" , "J K Rowlling", 31.90);
+        meuLivro.exibirInfo();
+
+        Livro meuLivro2 = new Livro();
+
+        meuLivro2.exibirInfo();
+
+;    }
 
 }
