@@ -1,5 +1,7 @@
 package secao15;
 
+import java.util.Arrays;
+
 public class POO2 {
 
     public static void main(String[] args) {
@@ -24,7 +26,30 @@ public class POO2 {
     System.out.println("Usuário entrou no sistema");
    }
     
-        
+        // 2 - Classe imutável 
+
+        PessoasImutavel joaquin = new PessoasImutavel("Joaquin", 23);
+
+        System.out.println(joaquin.getIdade());
+        System.out.println(joaquin.getNome());
+
+        //joaquin.nome = "Teste";
+
+         // 3 - Encapsulamento de Arrays
+
+         String[] meusAlunos = {"Matheus", "João", "Maria"};
+
+         Turma novaTurma = new Turma(meusAlunos);
+
+         System.out.println(Arrays.toString(novaTurma.getAlunos()));
+
+         String[] outrosAlunos = {"Aluno 1", "Aluno 2"};
+
+         novaTurma.setAlunos(outrosAlunos);
+
+         System.out.println(Arrays.toString(novaTurma.getAlunos()));
+
+
     }
 
   
