@@ -18,5 +18,13 @@ public class POO {
         // a subclasse tem acesso  a tudo da classe superclasse
         // e a superclasse não tem acesso a classe filha
 
+        // 3 -  Calsse object
+        pessoa Pedro = new pessoa("Pedro", 23);
+        pessoa Matheus = new pessoa("Matheus", 33);
+
+        System.out.println(Pedro.toString());
+        System.out.println(Matheus.equals(Pedro));
+        System.out.println(Pedro.hashCode());
+
     }
 }
