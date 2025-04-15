@@ -26,5 +26,12 @@ public class POO {
         System.out.println(Matheus.equals(Pedro));
         System.out.println(Pedro.hashCode());
 
+        // 4 - Override 
+        Quadrado q1 = new Quadrado(4);
+        Circulo c1 = new Circulo(3.2);
+
+        System.out.println(q1.calcularArea());
+        System.out.println(c1.calcularArea());
+
     }
 }
