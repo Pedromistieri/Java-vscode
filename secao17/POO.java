@@ -33,5 +33,28 @@ public class POO {
         System.out.println(q1.calcularArea());
         System.out.println(c1.calcularArea());
 
+        // 5 - Super
+        Funcionario funcionario = new Funcionario("Pedro", 1980);
+
+        Gerente gerente = new Gerente("Marcos",5000,1000);
+
+        funcionario.exibirDetalhe();
+        gerente.exibirDetalhe();
+
+        System.out.println(funcionario.calcularBonus());
+
+        System.out.println(gerente.calcularBonus());
+
+        // 6 - Classe abstrata
+        InstrumentoMusical Violao = new Violao("violão");
+        InstrumentoMusical Bateria = new Bateria("Bateria");
+
+        Violao.exibirDetalhe();
+        Bateria.exibirDetalhe();
+
+        Violao.tocar();
+        Bateria.tocar();
+
+
     }
 }
