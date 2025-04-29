@@ -55,6 +55,19 @@ public class POO {
         Violao.tocar();
         Bateria.tocar();
 
+        // 7 - Interfaces
+        Pagamento cartao = new CartaoCredito();
+        Pagamento transf = new TransferenciaBancaria(); 
+
+        cartao.processarPagamento(100);
+        cartao.exibirRecibo(100);
+
+        transf.processarPagamento(250);
+        transf.exibirRecibo(250);
+
+            
+    
+
 
     }
 }
